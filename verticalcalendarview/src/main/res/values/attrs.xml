@@ -1,0 +1,24 @@
+<resources>
+    <declare-styleable name="VerticalCalendarView">
+
+        <attr name="dateTextAppearance" format="reference" />
+        <attr name="weekDayTextAppearance" format="reference" />
+        <attr name="monthTextAppearance" format="reference" />
+
+        <!-- Month Label Attrs -->
+        <attr name="monthLabelHeight" format="dimension" />
+        <attr name="monthDividerSize" format="dimension" />
+
+        <!-- Weekrow attrs -->
+        <attr name="dayHeight" format="dimension" />
+        <attr name="dayWidth" format="dimension" />
+
+
+        <attr name="todayCircleSize" format="dimension" />
+        <attr name="todayCircleColor" format="color|reference" />
+        <attr name="eventCircleColor" format="color|reference" />
+
+        <attr name="weekdayNameHeight" format="dimension" />
+
+    </declare-styleable>
+</resources>

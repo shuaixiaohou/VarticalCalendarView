@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.VerticalCalendar.Date" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.VerticalCalendar.WeekDay" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.VerticalCalendar.Month" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

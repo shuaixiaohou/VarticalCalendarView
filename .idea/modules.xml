@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vartical-calendar-view.iml" filepath="$PROJECT_DIR$/vartical-calendar-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vartical-calendar-view-master.iml" filepath="$PROJECT_DIR$/vartical-calendar-view-master.iml" group="vartical-calendar-view-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/vartical-calendar-view-master-app.iml" filepath="$PROJECT_DIR$/app/vartical-calendar-view-master-app.iml" group="vartical-calendar-view-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/verticalcalendarview/vartical-calendar-view-master-verticalcalendarview.iml" filepath="$PROJECT_DIR$/verticalcalendarview/vartical-calendar-view-master-verticalcalendarview.iml" group="vartical-calendar-view-master/verticalcalendarview" />
+      <module fileurl="file://$PROJECT_DIR$/verticalcalendarview/verticalcalendarview.iml" filepath="$PROJECT_DIR$/verticalcalendarview/verticalcalendarview.iml" />
+    </modules>
+  </component>
+</project>
