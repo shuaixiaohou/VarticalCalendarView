@@ -42,7 +42,7 @@ class VerticalCalendarAdapter(
 
     private val PAYLOAD = 3
     private var onDayClickListener: VerticalCalendarView.OnDayClickListener? = null
-    private val mEvents: HashMap<String, Boolean>
+    private val mEvents: HashMap<String, Event>
 
     override fun getItemCount(): Int {
         return mMonths.size
@@ -79,7 +79,7 @@ class VerticalCalendarAdapter(
 
         val mh =
             MonthViewHolder(v, viewType, attrs, object : VerticalCalendarView.OnDayClickListener {
-                override fun onClick(day: Int, month: Int, year: Int, hasEvent: Boolean) {
+                override fun onClick(day: Int, month: Int, year: Int, hasEvent: Event?) {
                     if (onDayClickListener != null) {
                         onDayClickListener!!.onClick(day, month, year, hasEvent(day, month, year))
                     }
@@ -135,7 +135,11 @@ class VerticalCalendarAdapter(
             }
         }
     }
-
+ private fun getEvent(day: Int, month: Int, year: Int): Event? {
+        val key = String.format("%d%d%d", day, month, year)
+        return mEvents[key]
+    }
+        
     private fun hasEvent(day: Int, month: Int, year: Int): Boolean {
         val key = String.format("%d%d%d", day, month, year)
 
@@ -214,9 +218,9 @@ class VerticalCalendarAdapter(
         this.onDayClickListener = onDayClickListener
     }
 
-    fun addEvent(day: Int, month: Int, year: Int) {
+    fun addEvent(day: Int, month: Int, year: Int, obj: Any) {
         val key = String.format("%d%d%d", day, month, year)
-        mEvents[key] = true
+        mEvents[key] = Event(true, obj)
         notifyDataSetChanged()
     }
 
@@ -226,3 +230,4 @@ class VerticalCalendarAdapter(
         notifyDataSetChanged()
     }
 }
+data class Event(val hasEvent: Boolean, var obj: Any)
