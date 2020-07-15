@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                     ).show()
             }
         })
+        //    Handler().postDelayed(Runnable {//模拟耗时操作
         calendarView?.addEvent(1, 6, 2020)
         calendarView?.addEvent(5, 6, 2020)
         calendarView?.addEvent(6, 6, 2020)
@@ -37,6 +38,6 @@ class MainActivity : AppCompatActivity() {
         calendarView?.addEvent(1, 7, 2020)
         calendarView?.addEvent(3, 7, 2020)
         calendarView?.addEvent(5, 7, 2020)
-
+       //  }, 5000)
     }
 }
