@@ -80,15 +80,15 @@ class VerticalCalendarView : FrameLayout {
                     }
                 }
 
-                if (!loading && totalItemCount - visibleItemCount <= firstVisibleItem + visibleThreshold
-                    && mCalendarAdapter!!.shouldLoadNextMonths()
-                ) {
+//                 if (!loading && totalItemCount - visibleItemCount <= firstVisibleItem + visibleThreshold
+//                     && mCalendarAdapter!!.shouldLoadNextMonths()
+//                 ) {
                     // End has been reached
 //                    mCalendarAdapter!!.getNextMonths()
 //                    loading = true
-                }
-
-                if (!loading && firstVisibleItem <= 1 + visibleThreshold
+//                 }
+                   if (!loading && firstVisibleItem <= 1
+//                 if (!loading && firstVisibleItem <= 1 + visibleThreshold
                     && mCalendarAdapter!!.shouldLoadPreviousMonths()
                 ) {
                     // Start has been reached
