@@ -31,13 +31,23 @@ class MainActivity : AppCompatActivity() {
             }
         })
         //    Handler().postDelayed(Runnable {//模拟耗时操作
-        calendarView?.addEvent(1, 6, 2020)
-        calendarView?.addEvent(5, 6, 2020)
-        calendarView?.addEvent(6, 6, 2020)
-        calendarView?.addEvent(2, 6, 2020)
-        calendarView?.addEvent(1, 7, 2020)
-        calendarView?.addEvent(3, 7, 2020)
-        calendarView?.addEvent(5, 7, 2020)
+     //   calendarView?.addEvent(1, 6, 2020)
+      //  calendarView?.addEvent(5, 6, 2020)
+     //   calendarView?.addEvent(6, 6, 2020)
+     //   calendarView?.addEvent(2, 6, 2020)
+     //   calendarView?.addEvent(1, 7, 2020)
+     //   calendarView?.addEvent(3, 7, 2020)
+     //   calendarView?.addEvent(5, 7, 2020)
        //  }, 5000)
+        Handler().postDelayed(Runnable {//模拟网络请求耗时操作
+        for (dayList in 1..31) {
+            for (monthList in 1..12) {
+                for (yearList in 2018..2020) {
+                    val obj = 1
+                    calendarView?.addEvent(dayList, monthList, yearList, obj)
+                }
+            }
+        }
+        }, 5000)
     }
 }
